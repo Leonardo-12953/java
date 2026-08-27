@@ -1,4 +1,4 @@
-public class uzumaki extends ninja {
+public class Uzumaki extends Ninja {
     
     boolean temBiju;
 

@@ -1,4 +1,4 @@
-public class uchiha extends ninja {
+public class Uchiha extends Ninja {
 
     public void sharinganAtivado() {
         System.out.println("Sharingan Ativado");
@@ -13,7 +13,7 @@ public class uchiha extends ninja {
 
         if (nivelDeChakra >= 2) {
             System.out.println("Susano ativado");
-        } else if (nivelDeChakra <= 1) {
+        } else if (nivelDeChakra == 1) {
             System.out.println("Eu só consegui ativar o sharingan");
         } else {
             System.out.println("Eu to sem chakra");

@@ -1,4 +1,4 @@
-public class ninja {
+public class Ninja {
     private String nome;
     private String aldeia;
     private int idade;
@@ -28,6 +28,6 @@ public class ninja {
     }
 
     public void ataqueBase() {
-        System.out.println("Eu sou um ninja e taquei uma kunai");
+        System.out.println("Kunai e Shuriken");
     }
 }
