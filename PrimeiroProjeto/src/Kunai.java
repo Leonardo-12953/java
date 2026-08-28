@@ -10,7 +10,8 @@ public class Kunai extends Arma {
     public void usarArma() {
         System.out.println("A Kunai foi perfurando o adversário! Dano: "+ getDanoBase());
         if (temPapelBomba) {
-            System.out.println("BOOM!! O papel bomba explodiu!");
+            System.out.println("BOOM!! O papel bomba explodiu! Causando dano de 150");
+            System.out.println("Eu lancei um armadilha, a kunai estava com papel Bomba");
         }
     }
 }

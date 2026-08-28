@@ -5,7 +5,6 @@ public class Uzumaki extends Ninja {
     public void setTemBiju(boolean temBiju) {
         this.temBiju = temBiju;
     }
-    
     public boolean isTemBiju() {
         return temBiju;
     }

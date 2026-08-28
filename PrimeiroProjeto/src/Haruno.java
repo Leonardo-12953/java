@@ -27,7 +27,7 @@ public class Haruno extends Ninja {
         System.out.println("Curando... saúde aumentada para " + this.nivelNinjutsuMedico);
     }
     public void impactoMonstruoso(){
-        System.out.println("Soco da morte com força "+ this.forcaBruta);
+        System.out.println("Soco da morteeee !!! causando "+ this.forcaBruta +" de dano ao inimigo.");
     }
 
 
