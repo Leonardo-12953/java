@@ -1,13 +1,22 @@
 public class Uzumaki extends Ninja {
     
-    boolean temBiju;
-
-    public void chakraInfinito() {
-        System.out.println("Você é um uzumaki então você têm chakra infinito");
+    private boolean temBiju;
+    
+    public void setTemBiju(boolean temBiju) {
+        this.temBiju = temBiju;
     }
     
-    @Override
-    public void ataqueBase() {
-        System.out.println("Eu sou um ninja e taquei uma Kunai de elemento AR");
+    public boolean isTemBiju() {
+        return temBiju;
     }
+
+    public void chakraInfinito() {
+        System.out.println("Sou uzumaki tenho chakra infinito");
+    }
+    
+
+    public void ModoSabioAtivado() {
+        System.out.println("Modo Sabio Ativado !");
+    }
+
 }

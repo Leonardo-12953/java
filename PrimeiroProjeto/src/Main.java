@@ -11,14 +11,14 @@ public class Main {
         naruto.setNome("Naruto Uzumaki");
         naruto.setAldeia("Folha");
         naruto.setIdade(17);
-        naruto.temBiju = true;
+        naruto.setTemBiju(true);
         
         // mostra na tela o Naruto
         System.out.println("\nNinja: " + naruto.getNome());
         System.out.println("Aldeia: "+ naruto.getAldeia());
         System.out.println("Idade: " + naruto.getIdade());
-        System.out.println("Têm Biju: " + naruto.temBiju);
-        naruto.ataqueBase();
+        System.out.println("Têm Biju: " + naruto.isTemBiju());
+        naruto.ModoSabioAtivado();
         rasenshuriken.usarArma();
 
 
@@ -34,15 +34,11 @@ public class Main {
         System.out.println("\nNinja: " + sasuke.getNome());
         System.out.println("Aldeia: "+ sasuke.getAldeia());
         System.out.println("Idade: " + sasuke.getIdade());
+        sasuke.usarHabilidadeChakra(2);
         sasuke.sharinganAtivado();
-        System.out.println("Nivel Sharingan: " + sasuke.nivelSharingan(5));
-        sasuke.ataqueBase(1);
+        System.out.println("Nível do Sharingan: "+ sasuke.getNivelSharingan(5));
         boshuriken.usarArma();
     
-        
-        
-
-
     }
         
     

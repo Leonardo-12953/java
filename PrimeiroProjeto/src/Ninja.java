@@ -27,7 +27,4 @@ public class Ninja {
         this.idade = idade;
     }
 
-    public void ataqueBase() {
-        System.out.println("Kunai e Shuriken");
-    }
 }
