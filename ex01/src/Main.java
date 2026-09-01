@@ -16,6 +16,7 @@ public class Main {
         System.out.println("Ano: "+ carro.getAno());
         System.out.println("Cor: "+ carro.getCor());
         System.out.println("Obrigatório uso de cinto: "+ carro.isUsarCintoSeguranca());
+        carro.acelerar(80, "quinta");
 
 
 
@@ -35,6 +36,7 @@ public class Main {
         System.out.println("Obrigatório uso de capacete: "+ moto.isUsarCapacete());
         System.out.println("Vou fazer uma manobra pra demostrar minha habilidade !");
         moto.empinar();
+        moto.acelerar(100, "quinta");
 
 
     }

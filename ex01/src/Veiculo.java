@@ -3,7 +3,8 @@ public class Veiculo {
     private String modelo;
     private String marca;
     private int ano;
-
+    
+    
     // setando
     public void setModelo(String modelo) {
         this.modelo = modelo;
@@ -31,5 +32,11 @@ public class Veiculo {
     public String getModelo() {
         return modelo;
     }
+
+
+    public void acelerar() {
+        System.out.println("Acelerando...");
+    }
+
 
 }
