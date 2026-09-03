@@ -1,5 +1,10 @@
 public class Dev extends Funcionario {
     private double salarioFixo;
+    
+    public Dev(String nome, double salarioFixo) {
+        super(nome);
+        this.salarioFixo = salarioFixo;
+    }
 
     public void setSalarioFixo(double salarioFixo) {
         this.salarioFixo = salarioFixo;
@@ -12,6 +17,7 @@ public class Dev extends Funcionario {
     public double calcularSalario() {
         return getSalarioFixo();
     }
+    
     
 
 }
