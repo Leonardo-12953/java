@@ -17,21 +17,15 @@ public class Time {
         elenco.addAll(novos);
     }
 
-    public void expulsar(int numeroCamisa) {
+    public void expulsar(int numeroCamisa) throws JogadorNaoEncontradoException {
+        boolean existe = elenco.stream().anyMatch(j -> j.getNumeroCamisa() == numeroCamisa);
+
+        if (!existe) {
+            throw new JogadorNaoEncontradoException("Não foi possível expulsar: Jogador com a camisa "+ numeroCamisa +" não foi encontrado no elenco!");
+        }
+
         elenco.removeIf(jogador -> jogador.getNumeroCamisa() == numeroCamisa);
     }
-
-
-    // Se quiser mostrar quem foi o expulso.
-    /*public void expulsar(int numeroCamisa) {
-        for (Jogador jogador : elenco) {
-            if (numeroCamisa == jogador.getNumeroCamisa()) {
-                elenco.remove(jogador);
-                System.out.println("Jogador "+ jogador.getNome() +" removido do elenco.");
-                break;
-            }
-        }
-    }*/
 
 
 

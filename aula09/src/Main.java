@@ -33,20 +33,37 @@ public class Main {
             new Zagueiro("Marquinhos", 3)
         ));
 
-
+        // Flamengo
         flamengo.listarElenco();
-        System.out.println("\nRemovendo jogador do elenco....");
-        flamengo.expulsar(4);
+        try {
+            System.out.println("\nExpulsando jogador do elenco....");
+            flamengo.expulsar(6);
+            System.out.println("Jogador Expulso !!");
+        } catch (JogadorNaoEncontradoException excep) {
+            System.out.println("Erro: "+ excep.getMessage());
+        }
         flamengo.listarElenco();
 
+        // Real Madrid
         realMadrid.listarElenco();
-        System.out.println("\nRemovendo jogador do elenco....");
-        realMadrid.expulsar(10);
+        try {
+            System.out.println("\nExpulsando jogador do elenco....");
+            realMadrid.expulsar(10); 
+            System.out.println("Jogador Expulso !!"); 
+        } catch (JogadorNaoEncontradoException excep) {
+            System.out.println("Erro: "+ excep.getMessage());
+        }
         realMadrid.listarElenco();
 
+        // Seleção Brasileira
         selecaoaBrasileira.listarElenco();
-        System.out.println("\nRemovendo jogador do elenco....");
-        selecaoaBrasileira.expulsar(3);
+        try {
+            System.out.println("\nExpulsando jogador do elenco....");
+            selecaoaBrasileira.expulsar(3);
+            System.out.println("Jogador Expulso !!");
+        } catch (JogadorNaoEncontradoException excep) {
+            System.out.println("Erro: "+ excep.getMessage());
+        }
         selecaoaBrasileira.listarElenco();
 
 
