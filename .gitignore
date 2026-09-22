@@ -1,0 +1,16 @@
+# Java compilado
+*.class
+
+# Pastas geradas por compilação
+bin/
+out/
+target/
+
+# VS Code
+.vscode/
+
+# Bancos locais
+*.db
+
+# Logs
+*.log
