@@ -9,3 +9,22 @@ Programação Orientada a Objetos, acompanhado pelo conteúdo do canal Fiasco.
 
 Canal/aula utilizada como base:
 [https://www.youtube.com/watch?v=OIYWA1GwCEs&list=WL&index=1]
+
+
+## Testando Modelagem de Sistemas (UML)
+
+### Diagrama de Classes
+
+```mermaid
+classDiagram
+    class Ninja {
+        -String nome
+        -String aldeia
+        -int idade
+    }
+    class Uzumaki {
+        -boolean temBiju
+        +ModoSabioAtivado()
+    }
+    Ninja <|-- Uzumaki
+```
