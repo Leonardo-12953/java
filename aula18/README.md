@@ -1,6 +1,6 @@
 # Diagrama de classes
 
-'''mermaid
+```mermaid
     classDiagram
         class Pessoa {
             -String nome
@@ -23,4 +23,4 @@
         }
         Pessoa <|-- Cliente
         Pessoa <|-- Funcionario
-'''
+```
