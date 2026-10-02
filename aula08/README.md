@@ -3,10 +3,11 @@
 ## Class Diagram
 
 ```mermaid
-    BolsaNinja~T~ "1" --> "0..*" Kunai
-    BolsaNinja~T~ "1" --> "0..*" Shuriken
-    BolsaNinja~T~ "1" --> "0..*" Pergaminho
+    
     classDiagram
+        BolsaNinja~T~ "1" --> "0..*" Kunai
+        BolsaNinja~T~ "1" --> "0..*" Shuriken
+        BolsaNinja~T~ "1" --> "0..*" Pergaminho
         class BolsaNinja~T~ {
             -List~T~ ferramentas
             
