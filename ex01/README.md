@@ -11,6 +11,37 @@ O objetivo deste desafio foi construir um sistema de veículos do zero, de forma
 
 ---
 
+## Class Diagram
+```mermaid
+    classDiagram
+        Moto --|> Veiculo
+        Carro --|> Veiculo
+        class Carro {
+            -boolean usarCintoSeguranca
+
+            +acelerar() void
+            +acelerar(int velocidade) void
+            +acelerar(int velocidade, String marcha) void
+        }
+        class Moto {
+            -boolean usarCapacete
+
+            +empinar() void
+            +acelerar() void
+            +acelerar(int velocidade, String marcha) void
+        }
+        class Veiculo {
+            -String cor
+            -String modelo
+            -String marca
+            -int ano
+
+            +acelerar() void
+        }
+```
+
+---
+
 ## Estrutura do Código
 
 O projeto é composto por 4 partes principais:
