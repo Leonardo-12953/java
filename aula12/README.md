@@ -3,8 +3,9 @@
 ## Class Diagram
 
 ```mermaid
-    class Aluno {
+    classDiagram
     GestaoFaculdade "1" --> "0..*" Aluno : gerencia
+    class Aluno {
         -String matricula
         -String nome
         -String email
